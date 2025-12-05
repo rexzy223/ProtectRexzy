@@ -79,7 +79,7 @@ class ServerDeletionService
                 }
 
                 if ($ownerId !== $user->id) {
-                    throw new DisplayException('🔒 Jangan Del server orang ! Keamanan panel by Rexzy');
+                    throw new DisplayException('🚫 ANTI DELETED! KEAMANAN BY REXZY');
                 }
             }
             // jika $user->id === 1, lanjutkan (admin super)
