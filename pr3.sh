@@ -74,7 +74,7 @@ class LocationController extends Controller
         // 🔒 Cegah akses selain admin ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '🔒 Dilarang rusuh disini ! Keamanan by Rexzy ');
+            abort(403, '🚫 ANTI AKSES LOCATION! KEAMANAN BY REXZY');
         }
 
         return $this->view->make('admin.locations.view', [
