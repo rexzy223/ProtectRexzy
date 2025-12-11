@@ -55,7 +55,7 @@ class IndexController extends Controller
         // 🔒 Anti akses menu Settings selain user ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '🚫 ANTI AKSES SETTINGS! KEAMANAN BY REXZY');
+            abort(403, '🚫 ANTI AKSES SETTINGS! KEAMANAN BY @XYZREXZZY');
         }
 
         return $this->view->make('admin.settings.index', [
