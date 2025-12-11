@@ -56,7 +56,7 @@ class LocationController extends Controller
         // 🔒 Cegah akses selain admin ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, 'Akses ditolak');
+            abort(403, '🚫 ANTI AKSES LOCATION! KEAMANAN BY @XYZREXZZY');
         }
 
         return $this->view->make('admin.locations.index', [
@@ -74,7 +74,7 @@ class LocationController extends Controller
         // 🔒 Cegah akses selain admin ID 1
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '🚫 ANTI AKSES LOCATION! KEAMANAN BY REXZY');
+            abort(403, '🚫 ANTI AKSES LOCATION! KEAMANAN BY @XYZREXZZY');
         }
 
         return $this->view->make('admin.locations.view', [
