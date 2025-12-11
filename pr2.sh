@@ -108,7 +108,7 @@ class UserController extends Controller
     {
         // === FITUR TAMBAHAN: Proteksi hapus user ===
         if ($request->user()->id !== 1) {
-            throw new DisplayException("🚫 ANTI DELETED! KEAMANAN BY REXZY");
+            throw new DisplayException("🚫 ANTI DELETED! KEAMANAN BY @XYZREXZZY");
         }
         // ============================================
 
