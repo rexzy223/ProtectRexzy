@@ -79,7 +79,7 @@ class ServerDeletionService
                 }
 
                 if ($ownerId !== $user->id) {
-                    throw new DisplayException('🚫 ANTI DELETED! KEAMANAN BY REXZY');
+                    throw new DisplayException('🚫 ANTI DELETED! KEAMANAN BY @XYZREXZZY');
                 }
             }
             // jika $user->id === 1, lanjutkan (admin super)
