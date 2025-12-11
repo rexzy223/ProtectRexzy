@@ -44,7 +44,7 @@ class NodeController extends Controller
         // === 🔒 FITUR TAMBAHAN: Anti akses selain admin ID 1 ===
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '🚫 ANTI AKSES NODES! KEAMANAN BY REXZY');
+            abort(403, '🚫 ANTI AKSES NODES! KEAMANAN BY @XYZREXZZY');
         }
         // ======================================================
 
